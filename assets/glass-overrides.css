@@ -1250,6 +1250,97 @@ button[title="Switch to dark mode"],
   color: #7f102e !important;
 }
 
+/* Consistent, high-contrast form controls across every ledger page. */
+.app-shell input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="color"]),
+.app-shell select,
+.app-shell textarea,
+.app-shell .cat-sel {
+  color: #2d2925 !important;
+  -webkit-text-fill-color: #2d2925 !important;
+  background-color: #fff !important;
+  background-image: none !important;
+  border: 1.5px solid rgba(44, 41, 37, .52) !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+  opacity: 1 !important;
+  font-weight: 500 !important;
+  line-height: 1.35 !important;
+}
+
+.app-shell input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="color"]),
+.app-shell select,
+.app-shell .cat-sel {
+  min-height: 42px !important;
+}
+
+.app-shell textarea {
+  min-height: 84px !important;
+  resize: vertical;
+}
+
+.app-shell input::placeholder,
+.app-shell textarea::placeholder {
+  color: #6f6861 !important;
+  -webkit-text-fill-color: #6f6861 !important;
+  opacity: 1 !important;
+  font-weight: 400 !important;
+}
+
+.app-shell label {
+  color: #514b45 !important;
+  font-weight: 600 !important;
+}
+
+.app-shell select option {
+  color: #2d2925;
+  background: #fff;
+}
+
+.app-shell input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):focus,
+.app-shell select:focus,
+.app-shell textarea:focus,
+.app-shell .cat-sel:focus {
+  color: #1f1c19 !important;
+  -webkit-text-fill-color: #1f1c19 !important;
+  background-color: #fff !important;
+  border-color: #4b4742 !important;
+  box-shadow: 0 0 0 3px rgba(75, 71, 66, .18) !important;
+  outline: none !important;
+}
+
+.app-shell input:disabled,
+.app-shell select:disabled,
+.app-shell textarea:disabled,
+.app-shell input[readonly],
+.app-shell textarea[readonly] {
+  color: #514b45 !important;
+  -webkit-text-fill-color: #514b45 !important;
+  background-color: #e9e6df !important;
+  border-color: rgba(44, 41, 37, .30) !important;
+  opacity: 1 !important;
+  cursor: not-allowed;
+}
+
+.app-shell input:-webkit-autofill,
+.app-shell input:-webkit-autofill:hover,
+.app-shell input:-webkit-autofill:focus,
+.app-shell textarea:-webkit-autofill,
+.app-shell select:-webkit-autofill {
+  -webkit-text-fill-color: #2d2925 !important;
+  -webkit-box-shadow: 0 0 0 1000px #fff inset !important;
+  box-shadow: 0 0 0 1000px #fff inset !important;
+  caret-color: #2d2925 !important;
+}
+
+/* Preserve intentionally borderless large amount entry while improving contrast. */
+.app-shell .env-amount-input {
+  min-height: 0 !important;
+  color: #2d2925 !important;
+  -webkit-text-fill-color: #2d2925 !important;
+  background: transparent !important;
+  border-color: transparent !important;
+}
+
 .ledger-envelope-over > div > div:first-child > div > div:not(:first-child) p {
   color: #7f102e !important;
 }
