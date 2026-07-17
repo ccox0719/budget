@@ -1,0 +1,11 @@
+npm run build
+netlify deploy --prod
+
+
+Next run this in phases: 
+
+git fetch ccox0719
+git checkout main
+git pull ccox0719 main
+git merge codex/negative-envelope-display
+git push ccox0719 main
